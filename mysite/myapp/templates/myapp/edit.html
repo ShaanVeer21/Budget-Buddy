@@ -1,0 +1,36 @@
+{% extends "myapp/base.html" %}
+{% block body %}
+    <div class="m-10 font-bold">Edit Expense ✏️</div>
+    <form class="shadow-lg m-10 rounded-lg" method="POST">
+        {% csrf_token %}
+        <div class="form-container px-5 py-10 md:flex">
+            <div class="mx-5 md:mx-10">
+                <div class="mb-5">
+                    <label>Expense Name</label>
+                </div>
+                <div class="border">
+                    {{ expense_form.name }}
+                </div>
+            </div>
+            <div class="mx-5 md:mx-10">
+                <div class="mb-5">
+                    <label>Amount</label>
+                </div>
+                <div class="border">
+                    {{ expense_form.amount }}
+                </div>
+            </div>
+            <div class="mx-5 md:mx-10">
+                <div class="mb-5">
+                    <label>Category</label>
+                </div>
+                <div class="border">
+                    {{ expense_form.category }}
+                </div>
+            </div>
+            <div class="mx-5 mt-5 md:mt-8 md:mx-10">
+                <button class="bg-green-700 px-5 py-2 rounded-lg text-white font-bold" type="submit">Edit data</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
