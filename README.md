@@ -4,9 +4,8 @@ An Expense Tracker and Calculator application built using JavaScript and Django,
 
 - Expense Tracking: Add, edit, and delete expenses.
 - Categorization: Organize expenses by categories.
-- **Dynamic Charts: Visualize spending patterns using Chart.js.
-- Responsive Design:** Modern and responsive UI with Tailwind CSS.
-- Calculator: Quick arithmetic operations.
+- Dynamic Charts: Visualize spending patterns using Chart.js.
+- Responsive Design: Modern and responsive UI with Tailwind CSS.
 
 **Technologies Used
 
