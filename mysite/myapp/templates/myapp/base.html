@@ -16,8 +16,15 @@
                 <img class="h-10 mr-3" src="{% static "myapp/images/wallet.png" %}">
                 <span class="self-center text-xl font-semibold">Budget Buddy</span>
             </a>
+            <div class="flex space-x-4">
+                <a href="#about" class="text-gray-700 hover:text-green-500 font-semibold m-3">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-500 font-semibold m-3">Contact</a>
+                <a href="#services" class="text-gray-700 hover:text-green-500 font-semibold m-3">Services</a>
+            </div>
         </div>
     </nav>
+    
+
     {% block body %}
     {% endblock %}
 </body>
