@@ -3,9 +3,10 @@ from django.shortcuts import render,redirect
 from .forms import ExpenseForm
 from .models import Expense
 from django.db.models import Sum
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-
+@login_required
 def index(request):
     if request.method == "POST":
         expense = ExpenseForm(request.POST)
